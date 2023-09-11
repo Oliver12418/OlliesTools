@@ -1,5 +1,4 @@
 class OlliesTools:
-
     @staticmethod
     def repchar(lst1: list[str], x: int, y: int, char: str) -> list[str]:
         """
@@ -77,3 +76,19 @@ class OlliesTools:
 
         string="\033["+";".join([str(TextFormatting), str(TextColor), str(BackgroundColor)])+"m"+Text+"\033[0m"
         return string
+        
+     @staticmethod
+     def RepStr(text: str, substring: str, replacement: str) -> str:
+        """
+        Finds and replaces all occurrences of a substring in a string.
+
+        Args:
+            text (str): The string to be searched.
+            substring (str): The substring to be replaced.
+            replacement (str): The string to replace the substring with.
+
+        Returns:
+            str: The string with the substring replaced.
+        """
+
+        return text.replace(substring)
