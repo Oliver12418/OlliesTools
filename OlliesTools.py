@@ -77,8 +77,8 @@ class OlliesTools:
         string="\033["+";".join([str(TextFormatting), str(TextColor), str(BackgroundColor)])+"m"+Text+"\033[0m"
         return string
         
-     @staticmethod
-     def RepStr(text: str, substring: str, replacement: str) -> str:
+    @staticmethod
+    def RepStr(text: str, substring: str, replacement: str) -> str:
         """
         Finds and replaces all occurrences of a substring in a string.
 
@@ -91,4 +91,12 @@ class OlliesTools:
             str: The string with the substring replaced.
         """
 
-        return text.replace(substring)
+        return text.replace(substring, replacement)
+        
+    @staticmethod
+    def Greater(a: int, b: int) -> int:
+        return a*(a>b)+b*(b>a)
+        
+    @staticmethod
+    def Less(a: int, b: int) -> int:
+        return a*(a<b)+b*(b<a)
