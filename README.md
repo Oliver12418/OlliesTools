@@ -20,4 +20,4 @@ Tool(args)
 
 ## More information
 
-For more information, please click here for [MoreInfo](/./MoreInfo/Home.md).
+For more information, please click here for [More Info](/./MoreInfo/Home.md).
